@@ -1,0 +1,112 @@
+:root {
+    --main-font-color: rgb(50, 50, 50);
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    color: var(--main-font-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p {
+    line-height: 1.85;
+    letter-spacing: 0.05em;
+}
+
+span.text {
+    display: inline-block;
+}
+
+body > main {
+    margin-top: 90px;
+    width: 100%;
+    max-width: 1400px;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: solid 0.3px rgba(128, 128, 128, 0.3);
+    z-index: 1;
+}
+header > img {
+    height: 80px;
+    padding: 5px;
+}
+header > nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    flex: 1;
+    white-space: nowrap;
+}
+
+header > nav > a {
+    transition: transform 0.3s, text-shadow 0.3s;
+    color: var(--main-font-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    padding-top: 10px;
+    text-shadow: 0 0px 0px rgba(128, 128, 128, 0.6);
+    font-size: 1.1em;
+}
+
+header > nav > a:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 3px 2px rgba(128, 128, 128, 0.6);
+}
+
+main {
+    min-height: 80vh;
+}
+
+
+section {
+    margin-bottom: 90px;
+}
+
+footer {
+    flex: auto;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 800px) {
+    header > img {
+        height: 50px;
+        padding: 0px;
+        padding-top: 5px;
+    }
+
+    header > nav > a:hover {
+        transform: translateY(0);
+        text-shadow: none;
+    }
+
+    body > main {
+        margin-top: 56px;
+    }
+}

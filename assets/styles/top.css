@@ -1,0 +1,162 @@
+
+/* top */
+
+section#top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+section#top > img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section#top > p {
+    min-width: 90vw;
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    line-height: 1.6em;
+}
+
+section#top > a {
+    margin-top: 30px;
+    font-size: 0.9em;
+    transition: transform 0.2s;
+    padding: 14px 30px;
+    background-color: greenyellow;
+    text-decoration: none;
+    background: -moz-linear-gradient(top, #cfff5a, #93cb0a); 
+    background: -webkit-linear-gradient(top, #cfff5a, #93cb0a); 
+    background: linear-gradient(to bottom, #cfff5a, #93cb0a); 
+    border-radius: 50px;
+    color: var(--main-font-color);
+}
+
+section#top > a:hover {
+    transform: scale(1.03)
+}
+
+
+/* thoughts */
+
+section#thoughts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    padding: 80px 0;
+}
+
+section#thoughts > .bg {
+    position: absolute;
+    background-color: rgb(249 255 243);
+    background: -moz-linear-gradient(top, rgb(249 255 243), rgb(255 250 243)); 
+    background: -webkit-linear-gradient(top, rgb(249 255 243), rgb(255 250 243)); 
+    background: linear-gradient(to bottom, rgb(249 255 243), rgb(255 250 243)); 
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+section#thoughts > p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* feature */
+
+section#feature {
+}
+
+.recommend_cards {
+    display: flex;
+    height: max-content;
+    min-height: 37vh;
+}
+
+.recommend_card {
+    position: relative;
+    width: calc(100%/4);
+}
+
+.recommend_card::before {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "詳しく見る";
+    text-decoration: underline;
+    padding: 3px 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.recommend_card > input {
+    display: none;
+}
+
+.recommend_card > img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommend_card > label {
+    display: inline-block;
+    padding: 5px 10px;
+    height: 100%;
+    transition: opacity 0.4s;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.recommend_card > input:checked + img + label {
+    transition: opacity 0.3s;
+    opacity: 1;
+    cursor:initial;
+}
+
+.recommend_card > label > * {
+    pointer-events: none;
+}
+
+.recommend_card > input:checked + img + label > * {
+    pointer-events: all;
+}
+
+@media screen and (max-width: 800px) {
+    section#top > p {
+        font-size: 4.8vw;
+    }
+
+    .recommend_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommend_card {
+        width: 100%;
+    }
+}
