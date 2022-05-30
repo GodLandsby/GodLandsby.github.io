@@ -79,7 +79,7 @@ header > nav > a:hover {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 100px;
 }
 
 
@@ -88,13 +88,79 @@ section {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: auto;
     width: 100%;
     min-height: 100px;
+}
+
+#access {
+    width: 100%;
+    max-width: 1400px;
+    margin-bottom: 40px;
+}
+
+#access > h2 {
+    margin-bottom: 20px;
+}
+
+address > iframe {
+    flex: auto;
+}
+
+#information {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+#information > span {
+    display: inline-block;
+    width: max-content;
+    line-height: 1.8em;
+    letter-spacing: 0.2em;
+}
+
+#information > span:first-child{
+    text-align: justify;
+	text-align-last: justify;
+}
+#information > span:last-child{
+    margin-left: 20px;
+}
+
+address > p {
+    text-align: center;
+    margin-top: 0.3em;
+    letter-spacing: 0.2em;
+}
+
+#copy {
+    position: relative;
+    min-height: 5em;
+    width: 100%;
+    flex: auto;
+    color: white;
     background-color: rgb(54, 54, 54);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copy > p {
+    margin: 0;
+    opacity: 0.8;
+    text-align: center;
+    position: absolute;
+    top: 1.5em;
 }
 
 @media screen and (max-width: 800px) {
+
     header > img {
         height: 50px;
         padding: 0px;
@@ -108,5 +174,23 @@ footer {
 
     body > main {
         margin-top: 56px;
+    }
+
+    #copy > p {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    #information > span:last-child{
+        margin-left: 10px;
+    }
+
+    #information > span {
+        letter-spacing: 0em;
     }
 }
