@@ -97,6 +97,7 @@ footer {
 }
 
 #access {
+    font-style:normal;
     width: 100%;
     max-width: 1400px;
     margin-bottom: 40px;
