@@ -132,6 +132,10 @@ address > iframe {
     margin-left: 20px;
 }
 
+#information > span:last-child > a {
+    color: var(--main-font-color);
+}
+
 address > p {
     text-align: center;
     margin-top: 0.3em;
@@ -160,6 +164,10 @@ address > p {
 }
 
 @media screen and (max-width: 800px) {
+
+    #tel {
+
+    }
 
     header > img {
         height: 50px;
