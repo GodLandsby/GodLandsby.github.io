@@ -31,9 +31,10 @@ span.text {
 }
 
 body > main {
-    margin-top: 90px;
+    margin-top: 75px;
     width: 100%;
     max-width: 1400px;
+    min-height: 100px;
 }
 header {
     position: fixed;
@@ -76,10 +77,6 @@ header > nav > a {
 header > nav > a:hover {
     transform: translateY(-3px);
     text-shadow: 0 3px 2px rgba(128, 128, 128, 0.6);
-}
-
-main {
-    min-height: 100px;
 }
 
 
