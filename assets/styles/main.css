@@ -50,7 +50,7 @@ header {
     z-index: 1;
 }
 header > img {
-    height: 80px;
+    height: 65px;
     padding: 5px;
 }
 header > nav {
