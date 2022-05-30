@@ -135,7 +135,7 @@ address > iframe {
 address > p {
     text-align: center;
     margin-top: 0.3em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 #copy {
@@ -191,6 +191,10 @@ address > p {
     }
 
     #information > span {
+        letter-spacing: 0em;
+    }
+
+    address > p {
         letter-spacing: 0em;
     }
 }
