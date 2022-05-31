@@ -1,0 +1,51 @@
+section#menu {
+    margin-bottom: 0;
+}
+
+#menu_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+#menu_box > table {
+    width: 45%;
+    min-width: 450px;
+    border-collapse: collapse;
+    margin: 30px 20px;
+}
+
+#menu_box > table > tbody {
+    text-align: left;
+}
+
+#menu_box > table > tbody > tr {
+    border-bottom: solid 1px rgb(54, 54, 54);
+}
+
+#menu_box > table > tbody * {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#menu_box > table > tbody th {
+    font-weight: normal;
+}
+
+#menu_box > table > tbody td {
+    width: 6em;
+}
+
+section#menu > p {
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    #menu_box > table {
+        width: 95%;
+        min-width: 0;
+        margin: 30px 5px;
+    }
+}

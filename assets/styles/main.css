@@ -18,7 +18,8 @@ body {
 
 h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -99,10 +100,6 @@ footer {
     margin-bottom: 40px;
 }
 
-#access > h2 {
-    margin-bottom: 20px;
-}
-
 address {
     display: flex;
     flex-direction: column;
@@ -172,10 +169,6 @@ address > p {
 
 @media screen and (max-width: 800px) {
 
-    #tel {
-
-    }
-
     header > img {
         height: 50px;
         padding: 0px;
@@ -199,6 +192,10 @@ address > p {
 @media screen and (max-width: 400px) {
     body {
         font-size: 0.9em;
+    }
+
+    body > main {
+        margin-top: 95px;
     }
 
     #information > span:last-child{

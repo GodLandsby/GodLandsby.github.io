@@ -59,7 +59,7 @@ section#thoughts {
     align-items: center;
     position: relative;
     height: fit-content;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 section#thoughts > .bg {
@@ -71,6 +71,10 @@ section#thoughts > .bg {
     width: 100vw;
     height: 100%;
     z-index: -1;
+}
+
+section#thoughts > h2 {
+    margin-bottom: 50px;
 }
 
 section#thoughts > p {
