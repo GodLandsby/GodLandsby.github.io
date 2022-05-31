@@ -42,6 +42,10 @@ section#menu > p {
     text-align: center;
 }
 
+#menu_box > table:last-child {
+    margin: 0;
+}
+
 @media screen and (max-width: 450px) {
     #menu_box > table {
         width: 95%;
