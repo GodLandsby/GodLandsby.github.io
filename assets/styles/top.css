@@ -22,6 +22,7 @@ section#top > img {
 
 section#top > p {
     min-width: 90vw;
+    max-width: 95vw;
     margin: 10px;
     text-align: center;
     font-size: 40px;
