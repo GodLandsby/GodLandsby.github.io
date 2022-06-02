@@ -1,6 +1,3 @@
-section#menu {
-    margin-bottom: 0;
-}
 
 #menu_box {
     display: flex;
@@ -49,12 +46,15 @@ section#menu > p {
 .service_card {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
 }
 
 .service_card > div {
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.15);
     padding: 10px 15px;
     margin: 15px 10px;
+    max-width: 500px;
 }
 
 .service_card > div > * {
