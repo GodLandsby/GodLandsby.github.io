@@ -46,6 +46,26 @@ section#menu > p {
     margin: 0 20px;
 }
 
+.service_card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_card > div {
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.15);
+    padding: 10px 15px;
+    margin: 15px 10px;
+}
+
+.service_card > div > * {
+    margin: 0;
+}
+
+.service_card > div > p {
+    text-align: left;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 450px) {
     #menu_box > table {
         width: 95%;
