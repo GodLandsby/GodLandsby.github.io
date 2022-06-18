@@ -1,12 +1,11 @@
-async function setupGallery(element) {
+async function setupGallery(element, stored_data) {
     if(!element) return;
     element.innerHTML = "";
     const selected_image = {
         element: null
     }
-    const data = (await (await fetch(`https://raw.githubusercontent.com/Godlandsby/Godlandsby.github.io/main/gallery`)).text());
+    const data = stored_data || (await (await fetch(`https://raw.githubusercontent.com/Godlandsby/Godlandsby.github.io/main/gallery`)).text());
     const list = data.split(/\n/g);
-    console.log(list)
     let index = 0;
     const init_length = (10 < list.length)? 10 : list.length;
     while(index < init_length) showImage(element, list[index++], selected_image);
@@ -24,6 +23,7 @@ async function setupGallery(element) {
         await showImages();
         state = false;
     }
+    return data;
 }
 
 async function showImage(element, url, selected_image) {
