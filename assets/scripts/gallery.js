@@ -5,7 +5,7 @@ async function setupGallery(element, stored_data) {
         element: null
     }
     const data = stored_data || (await (await fetch(`https://raw.githubusercontent.com/Godlandsby/Godlandsby.github.io/main/gallery`)).text());
-    const list = data.split(/\n/g);
+    const list = data.split(/\n/g).filter(v=>v);
     let index = 0;
     const init_length = (10 < list.length)? 10 : list.length;
     while(index < init_length) showImage(element, list[index++], selected_image);
