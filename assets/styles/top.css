@@ -39,6 +39,7 @@ section#top > p {
 }
 
 section#top > a {
+    font-weight: bold;
     margin-top: 30px;
     font-size: 0.9em;
     transition: transform 0.2s;
