@@ -3,7 +3,7 @@ async function setupGallery(element, stored_data) {
     const selected_image = {
         element: null
     }
-    const data = stored_data || (await (await fetch(`https://raw.githubusercontent.com/Godlandsby/Godlandsby.github.io/main/gallery`)).text());
+    const data = stored_data || (await (await fetch(`https://raw.githubusercontent.com/Godlandsby/Godlandsby.github.io/main/gallery_images/index`)).text());
     const list = data.split(/\n/g).filter(v=>v);
     if(!list.length) return;
     element.innerHTML = "";
