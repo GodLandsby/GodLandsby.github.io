@@ -171,5 +171,10 @@ section#feature {
 
     .recommend_card {
         width: 100%;
+        min-height: 37vh;
+    }
+
+    .recommend_card > label {
+        min-height: 37vh;
     }
 }
