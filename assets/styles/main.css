@@ -141,6 +141,10 @@ address > iframe {
     color: var(--main-font-color);
 }
 
+#information > span:last-child > a:hover {
+    color: rgb(170, 101, 69);
+}
+
 address > p {
     text-align: center;
     margin-top: 0.3em;
